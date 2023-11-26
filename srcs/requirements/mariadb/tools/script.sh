@@ -8,4 +8,4 @@ mysql -e "GRANT ALL PRIVILEGES ON $DB_NAME.* TO $DB_USER@'%';"
 
 service mariadb stop
 
-exec /usr/bin/mysqld --user=mysql --console
+exec mysqld --user=mysql --console
