@@ -7,4 +7,5 @@ mysql -e "CREATE USER IF NOT EXISTS $DB_USER@'%' IDENTIFIED BY '$DB_PASSWORD';"
 mysql -e "GRANT ALL PRIVILEGES ON $DB_NAME.* TO $DB_USER@'%';"
 
 service mariadb stop
-exec "$@"
+
+exec /usr/bin/mysqld --user=mysql --console
