@@ -1,0 +1,1 @@
+# There is nothing to ignore, but I guess it's a good practice to have a .dockerignore file (by default) in the same directory as Dockerfile ofc.

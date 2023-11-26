@@ -1,0 +1,4 @@
+[mysqld]
+port = 3306
+log_error=/var/log/mysql/mariadb.err
+query_cache_size = 16M
