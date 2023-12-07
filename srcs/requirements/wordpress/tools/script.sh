@@ -1,14 +1,6 @@
 #!/bin/bash
 
-RUN mkdir -p /var/www
-RUN curl -o /var/www/latest.tar.gz https://wordpress.org/latest.tar.gz
-tar -xf /var/www/latest.tar.gz
-rm -rf /var/www/latest.tar.gz
-
-curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar --output /usr/bin/wp
-chmod +x /usr/bin/wp
-
-mkdir -p /run/php
+sleep 5
 
 chown -R www-data:www-data /var/www/wordpress
 
